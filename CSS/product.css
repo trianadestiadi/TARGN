@@ -1,0 +1,104 @@
+/* NAVBAR NICH*/
+.nav-item {
+    margin-right: 50px; 
+}
+
+
+   .breadcrumb{
+       background-color: #000000;
+   }
+
+   .container.mb-5{
+    margin-top: 3rem;
+   }
+   .product-small img{
+      max-width: 10rem;
+      padding: 1rem;
+   }
+   
+   .toast{
+       top:-50px;
+       margin-left: 550px;
+   }
+   .toast.show{
+       top:20px ;
+   }
+ 
+   .color-label{
+      border-radius: 50% !important;
+      margin: 5px;
+   }
+   .color-label i{
+       opacity: 0;
+    }
+   .btn-check:checked+.color-label i{
+       opacity: 1;
+    }
+
+   .accordion-button{
+       padding: 5px;
+       background-color: #000000;
+     }
+   .accordion-button:not(.collapsed){
+      background-color: black;
+      color: rgb(0, 0, 0);
+    }
+   
+    .breadcrumb-item a{
+        text-decoration: none;
+    }
+    
+    .gradient-btn {
+        background: -webkit-linear-gradient(right, #ff0000, #ffa200);    
+        color: white; /* Warna teks */
+        border: none; /* Menghilangkan border default */
+        transition: background 0.3s ease; /* Transisi untuk efek hover */
+    }
+    
+    .gradient-btn:hover {
+        color: white;
+        box-shadow: 0px 1px 18px #ff0000;
+    }
+
+/* FOOTER */
+.footer{
+    margin: 0 auto;
+    padding: 2em;
+    background: #000000;
+    text-align: center;
+    position: relative;
+  }
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .footer::after, .footer::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #693cff, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .footer::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+  

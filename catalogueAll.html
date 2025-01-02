@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/catalogue.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TARGN</title>
+    <link rel="shortcut icon" href="IMAGES/logotargn.png">
+  </head>
+  <body  style="background-color: black;">
+
+    <!-- BAGIAN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black ;" >
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMAGES/logotargn.png" alt="" width="70" height="64" class="d-inline-block align-text-middle">
+                
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index-1.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogue
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="catalogueAll.html">All Item</a></li>
+                  <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                  <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Slingbag</a></li>
+                  <li><a class="dropdown-item" href="#">Keychain</a></li>
+                  <li><a class="dropdown-item" href="#">Sticker</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="cart.html">My Cart</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRODUCT HOODIE -->
+    <div class="container mb-5">
+        <h2 class="section-title text-light" id="Hoodie">HOODIE<h2>
+          <div id="products" class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+
+                  <div class="card product-item">
+                    <i class="bi bi-heart-fill position-absolute liked"></i>
+                    <i class="bi bi-heart position-absolute like"></i>
+                    <img src="IMAGES/distancehoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light">Hoodie</h6>
+                      <h5 class="card-title">TARGN "Distance"</h5>
+                      <p class="card-text price">295K <span class="float-end rating-stars" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </span> </p>
+                      <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button" href="product.html" > Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+                <div class="card product-item" >
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/worldchamphoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "World Champ"</h5>
+                    <p class="card-text price">295K<span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/reflehoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "Reflect"</h5>
+                    <p class="card-text price"> 390K<span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/stayfasthoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "Stay Fast"</h5>
+                    <p class="card-text price"> 295K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+     
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/toofasthoodie.jpg"  onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "Too Fast"</h5>
+                    <p class="card-text price"> 290K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/trchoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "TRC V.1"</h5>
+                    <p class="card-text price"> 295K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/worldchamphoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "World Champ"</h5>
+                    <p class="card-text price"> 295K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/targnv2hoodie.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                    <h5 class="card-title">TARGN "Japan 2.0"  </h5>
+                    <p class="card-text price"> 250K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+             
+            
+          </div>
+    </div>
+
+          <!-- PRODUCT TSHIRT -->
+    <div class="container mb-5">
+        <h2 class="section-title text-light" id="Tshirt">T-SHIRT<h2>
+          <div id="products" class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+
+                  <div class="card product-item">
+                    <i class="bi bi-heart-fill position-absolute liked"></i>
+                    <i class="bi bi-heart position-absolute like"></i>
+                    <img src="IMAGES/tshirt1.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light">T-shirt</h6>
+                      <h5 class="card-title">T-SHIRT "TRC REDLINE"</h5>
+                      <p class="card-text price">200K <span class="float-end rating-stars" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </span> </p>
+                      <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+                <div class="card product-item" >
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/tshirt2.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">T-SHIRT</h6>
+                    <h5 class="card-title">T-SHIRT "PANIGALE EDT"</h5>
+                    <p class="card-text price">200K<span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/tshirt3.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">T-SHIRT</h6>
+                    <h5 class="card-title">T-SHIRT "TARGN V.4 EDT"</h5>
+                    <p class="card-text price"> 390K<span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                   <img src="IMAGES/tshirt4.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted  fw-light ">T-SHIRT</h6>
+                        <h5 class="card-title">TARGN "LONGSLEEVE V1" </h5>
+                        <p class="card-text price"> 295K <span class="float-end rating-stars" >
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span> </p>
+                        <div class="text-center">
+                            <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>     
+        </div>
+    </div>
+
+              <!-- PRODUCT SLINGBAG -->
+              <div class="container mb-5">
+                <h2 class="section-title text-light" id="Waistbag">SLINGBAG<h2>
+                  <div id="products" class="row">
+                      <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                        
+        
+                          <div class="card product-item">
+                            <i class="bi bi-heart-fill position-absolute liked"></i>
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="IMAGES/bag1.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                            <div class="card-body">
+                              <h6 class="card-subtitle mb-2 text-muted  fw-light">SLINGBAG</h6>
+                              <h5 class="card-title">TARGN Sling bag "V.3"</h5>
+                              <p class="card-text price"> 255K <span class="float-end rating-stars" >
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                              </span> </p>
+                              <div class="text-center">
+                                <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                        
+                        <div class="card product-item" >
+                          <i class="bi bi-heart-fill position-absolute liked"></i>
+                        <i class="bi bi-heart position-absolute like"></i>
+                          <img src="IMAGES/bag2.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted  fw-light ">SLINGBAG</h6>
+                            <h5 class="card-title">TARGN Slingbag "V.2" </h5>
+                            <p class="card-text price">255K<span class="float-end rating-stars" >
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span> </p>
+                            <div class="text-center">
+                                <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                      
+                        <div class="card product-item">
+                          <i class="bi bi-heart-fill position-absolute liked"></i>
+                           <i class="bi bi-heart position-absolute like"></i>
+                          <img src="IMAGES/bag3.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted  fw-light ">SLINGBAG</h6>
+                            <h5 class="card-title">TARGN Slingbag "V.1"</h5>
+                            <p class="card-text price"> 255K <span class="float-end rating-stars" >
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span> </p>
+                            <div class="text-center">
+                                <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                      
+                        <div class="card product-item">
+                          <i class="bi bi-heart-fill position-absolute liked"></i>
+                           <i class="bi bi-heart position-absolute like"></i>
+                          <img src="IMAGES/bag4.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted  fw-light ">Hoodie</h6>
+                            <h5 class="card-title">TARGN "OG WG"</h5>
+                            <p class="card-text price"> 255K <span class="float-end rating-stars" >
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span> </p>
+                            <div class="text-center">
+                                <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>     
+                </div>
+            </div>
+
+                      <!-- PRODUCT KEYCHAIN -->
+    <div class="container mb-5">
+      <h2 class="section-title text-light" id="Keychain">KEYCHAIN<h2>
+        <div id="products" class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/keychain24.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light">Keychain</h6>
+                    <h5 class="card-title">KEYCHAIN "V.4" 24'</h5>
+                    <p class="card-text price">25K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                      <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+              <div class="card product-item" >
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+              <i class="bi bi-heart position-absolute like"></i>
+                <img src="IMAGES/key3.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted  fw-light ">Keychain</h6>
+                  <h5 class="card-title">KEYCHAIN "V.3" 23'</h5>
+                  <p class="card-text price">25K<span class="float-end rating-stars" >
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </span> </p>
+                  <div class="text-center">
+                      <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            
+              <div class="card product-item">
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+                 <i class="bi bi-heart position-absolute like"></i>
+                <img src="IMAGES/key2.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted  fw-light ">Keychain</h6>
+                  <h5 class="card-title">KEYCHAIN "V.2" 22'</h5>
+                  <p class="card-text price"> 25K<span class="float-end rating-stars" >
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </span> </p>
+                  <div class="text-center">
+                      <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            
+              <div class="card product-item">
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+                 <i class="bi bi-heart position-absolute like"></i>
+                 <img src="IMAGES/key1.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light ">Keychain</h6>
+                      <h5 class="card-title">TARGN KEYCHAIN </h5>
+                      <p class="card-text price">25K <span class="float-end rating-stars" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </span> </p>
+                      <div class="text-center">
+                          <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>     
+      </div>
+  </div>
+
+
+    <!-- PRODUCT KEYCHAIN -->
+    <div class="container mb-5">
+      <h2 class="section-title text-light" id="Sticker">STICKER<h2>
+        <div id="products" class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="IMAGES/sticker1.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light">Sticker</h6>
+                    <h5 class="card-title">STICKER "TRC" 24'</h5>
+                    <p class="card-text price">20K <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                      <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+              <div class="card product-item" >
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+              <i class="bi bi-heart position-absolute like"></i>
+                <img src="IMAGES/sticker2.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted  fw-light ">Sticker</h6>
+                  <h5 class="card-title">STICKER "V.3" 21'</h5>
+                  <p class="card-text price">20K<span class="float-end rating-stars" >
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </span> </p>
+                  <div class="text-center">
+                      <a class="btn btn-dark text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            
+              <div class="card product-item">
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+                 <i class="bi bi-heart position-absolute like"></i>
+                <img src="IMAGES/sticker3.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted  fw-light ">Sticker</h6>
+                  <h5 class="card-title">STICKER TARGN LOGO</h5>
+                  <p class="card-text price"> 20K<span class="float-end rating-stars" >
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </span> </p>
+                  <div class="text-center">
+                      <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            
+              <div class="card product-item">
+                <i class="bi bi-heart-fill position-absolute liked"></i>
+                 <i class="bi bi-heart position-absolute like"></i>
+                 <img src="IMAGES/sticker4.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light ">Sticker</h6>
+                      <h5 class="card-title">TARGN WHEELS</h5>
+                      <p class="card-text price">20K <span class="float-end rating-stars" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </span> </p>
+                      <div class="text-center">
+                          <a class="btn btn-dark  text-light w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>     
+      </div>
+  </div>
+
+
+
+     <!-- BAGIAN FOOTER -->
+     <div class="footer">
+      <footer class="bg-black text-light pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+
+              <div class="col-md-3 col-lg-3 col xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-light">TARGN</h5>
+                <hr class="mb-4">
+                <p>Ride in Style, Drive with Confidence</p>
+
+              </div>
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-light">Lets Us Help</h5>
+                <hr class="mb-4">
+                <p>
+                  <a href="Login.html" class="text-light" style="text-decoration: none;">Create Account</a>
+                </p>
+                <p>
+                  <a href="Login.html" class="text-light" style="text-decoration: none;">Login</a>
+                </p>
+                <p>
+                  <a href="#" class="text-light" style="text-decoration: none;">Shopping</a>
+                </p>
+              </div>
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-light">Catalogue</h5>
+                <hr class="mb-4">
+                <p>
+                  <a href="#" class="text-light" style="text-decoration: none;">Hoodie</a>
+                </p>
+                <p>
+                  <a href="#" class="text-light" style="text-decoration: none;">T-shirt</a>
+                </p>
+                <p>
+                  <a href="#" class="text-light" style="text-decoration: none;">Sling bag</a>
+                </p>
+                <p>
+                  <a href="#" class="text-light" style="text-decoration: none;">Keychain</a>
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-light">Contact Us</h5>
+                <hr class="mb-4">
+                <p>
+                  <a href="#" class="text-light"><li class="fas fa-home mr-3"></li>Bintaro 7722, IDN</a>
+                </p>
+                <p>
+                  <a href="" class="text-light"><li class="fas fa-envelope mr-3"></li>targn@email.com</a>
+                </p>
+                <p>
+                  <a href="" class="text-light"><li class="fas fa-phone mr-3"></li>0821-8725-8899</a>
+                </p>
+              </div>
+
+              <hr class="mb-4">
+              <div class="row d-flex justify-content-center">
+                <div>
+                  <p class="text-center">
+                    copyright 2024 All Rights Reserved By :
+                    <a href="" style="text-decoration: none;">
+                      <strong class="text-light">trianadestiadi</strong>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </footer>
+    </div>  
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

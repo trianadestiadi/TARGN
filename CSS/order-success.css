@@ -1,0 +1,11 @@
+.gradient-btn {
+    background: -webkit-linear-gradient(right, #ff0000, #ffa200);    
+    color: white; /* Warna teks */
+    border: none; /* Menghilangkan border default */
+    transition: background 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.gradient-btn:hover {
+    color: white;
+    box-shadow: 0px 1px 18px #ff0000;
+}

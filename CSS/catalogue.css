@@ -1,0 +1,93 @@
+/* NAVBAR NICH*/
+.nav-item {
+    margin-right: 50px; 
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: -120px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cdcdcd;
+    width: 100%;
+}
+
+
+/* BAGIAN PRODUCT */
+.container.mb-5 {
+    margin-top: 100px; 
+}
+.card.product-item {
+    width: 100%;
+    max-width: 300px; 
+    margin: 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    width: 100%; /* Lebar gambar 100% dari card */
+    height: 250px; /* Atur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.card-body {
+    flex-grow: 1; /* Agar body card mengisi ruang yang tersisa */
+}
+
+.card-text.price {
+    font-size: 1.2rem; /* Atur ukuran font untuk harga */
+}
+
+.rating-stars i {
+    color: gold; /* Warna bintang */
+}
+
+
+/* FOOTER  KEREN KAYA GAMING */
+.footer{
+    margin: 0 auto;
+    padding: 2em;
+    background: #000000;
+    text-align: center;
+    position: relative;
+  }
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .footer::after, .footer::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #693cff, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .footer::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+  
